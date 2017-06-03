@@ -35,7 +35,7 @@ if (Meteor.isClient) {
 
       wrapper.find('div').simulate('click');
 
-      expect(Session.set).toHaveBeenCalledWith('selectedNoteId', notes[1]._id);
+      expect(Session.set).toHaveBeenCalledWith('selectedNoteId', notes[0]._id);
     });
 
   });
